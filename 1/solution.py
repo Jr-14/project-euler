@@ -3,9 +3,17 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 
 Find the sum of all the multiples of 3 or 5 below 1000.
 """
+def naive_solution(x):
+    sum = 0
+    for i in range(x):
+        if i % 3 == 0 or i % 5 == 0:
+            sum += i
+    return sum
+
 
 def main():
-    pass
+    sum = naive_solution(1000)
+    print(sum)
 
 
 if __name__ == "__main__":
